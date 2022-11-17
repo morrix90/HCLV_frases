@@ -1,0 +1,74 @@
+:root {
+    --frase-bg: hsl(217, 19%, 24%);
+    --frase-text-color: hsl(193, 38%, 86%);
+    --bg-color: hsl(218, 23%, 16%);
+    --dice-bg: hsl(150, 100%, 66%);
+}
+
+html {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-color);
+    font-family: 'Manrope', sans-serif;
+    height: 100vh;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 600px;
+    grid-auto-rows: auto;
+    /* height: 250px; */
+    background-color: var(--frase-bg);
+    box-shadow: -1px 5px 10px -2px rgba(31,38,50,0.75);
+    border-radius: 10px;
+    text-align: center;
+    color: var(--frase-text-color);
+}
+
+.frase {
+    justify-self: center;
+    width: 80%;
+}
+
+.frase-id {
+    color: var(--dice-bg);
+    font-size: .8rem;
+    letter-spacing: 3px;
+}
+
+
+
+.frase-text {
+    font-size: 28px;
+}
+
+.container img {
+    margin-bottom: 40px;
+}
+
+.dice {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -30px;
+    width: 60px;
+    height: 60px;
+    background-color: var(--dice-bg);
+    border-radius: 50%;
+}
+
+button {
+    all: unset;
+    cursor: pointer;
+  }
+
+
